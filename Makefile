@@ -3,7 +3,7 @@ deps:
 	ollama pull codellama
 	ollama pull gemma:7b
 	ollama pull llama3
-	ollama pull llava-llama3
+	ollama pull llava
 	ollama pull mixtral:8x7b
 	ollama pull moondream
 	ollama pull phi3
