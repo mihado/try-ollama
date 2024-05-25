@@ -1,15 +1,18 @@
 default: deps
 
 deps:
+	ollama pull aya:8b
 	ollama pull codegemma
 	ollama pull codellama
 	ollama pull gemma:7b
 	ollama pull llama3
 	ollama pull llava
 	ollama pull moondream
+	ollama pull nomic-embed-text
 	ollama pull phi3
 	ollama pull qwen:4b
 	ollama pull wizardlm2
+	ollama pull yi:6b
 
 
 upgrade:
