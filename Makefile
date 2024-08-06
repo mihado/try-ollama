@@ -14,11 +14,15 @@ deps:
 	ollama pull wizardlm2
 	ollama pull yi:6b
 
-
-upgrade:
+upgrade-ollama:
 	ollama --version
 	sudo systemctl stop ollama
 	sudo curl -L https://ollama.com/download/ollama-linux-amd64 -o /usr/local/bin/ollama
 	sudo chmod +x /usr/local/bin/ollama
 	sudo systemctl restart ollama
 	ollama --version
+
+upgrade-webui:
+	docker pull ghcr.io/open-webui/open-webui:main
+	docker compose stop
+	docker compose up -d
