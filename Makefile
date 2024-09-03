@@ -4,6 +4,7 @@ deps:
 	ollama pull aya:8b
 	ollama pull codegemma
 	ollama pull codellama
+	ollama pull deepseek-coder-v2
 	ollama pull gemma2
 	ollama pull llama3.1
 	ollama pull llava
