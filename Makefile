@@ -7,6 +7,7 @@ deps:
 	ollama pull deepseek-coder-v2
 	ollama pull gemma2
 	ollama pull llama3.1
+	ollama pull llama3.2
 	ollama pull llava
 	ollama pull moondream
 	ollama pull nomic-embed-text
