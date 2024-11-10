@@ -8,6 +8,7 @@ deps:
 	ollama pull gemma2
 	ollama pull llama3.1
 	ollama pull llama3.2
+	ollama pull llama3.2-vision
 	ollama pull llava
 	ollama pull moondream
 	ollama pull nomic-embed-text
@@ -24,7 +25,7 @@ upgrade-ollama:
 	rm -rf /usr/lib/ollama
 	mkdir /usr/lib/ollama
 	cp -f tmp/ollama/bin/ollama /usr/bin
-	cp -r tmp/ollama/lib/ollama /usr/lib/ollama
+	cp -r tmp/ollama/lib/ollama /usr/lib/
 	sudo systemctl stop ollama
 	sudo chmod +x /usr/bin/ollama
 	sudo systemctl restart ollama
