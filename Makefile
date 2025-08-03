@@ -1,22 +1,24 @@
 default: deps
 
+MODELS = \
+	devstral:24b \
+	gemma3:12b \
+	gemma3n:e4b \
+	granite3.3:8b \
+	magistral:24b \
+	mistral-small3.2:24b \
+	mxbai-embed-large:latest \
+	nomic-embed-text \
+	phi4 \
+	qwen2.5vl:7b \
+	qwen3-coder:30b \
+	qwen3:14b
+
 deps:
-	ollama pull aya-expanse:8b
-	ollama pull deepseek-r1:14b
-	ollama pull gemma3:12b
-	ollama pull gemma3:4b
-	ollama pull llama3.1
-	ollama pull llama3.2
-	ollama pull llama3.2-vision
-	ollama pull moondream
-	ollama pull nomic-embed-text
-	ollama pull phi4
-	ollama pull phi4-mini
-	ollama pull qwen2.5-coder:14b
-	ollama pull qwen2.5-coder:7b-base
-	ollama pull qwen2.5-coder:7b-instruct
-	ollama pull qwen2.5:14b
-	ollama pull yi:6b
+	@for model in $(MODELS); do \
+		echo "Pulling $$model..."; \
+		ollama pull $$model; \
+	done
 
 upgrade-ollama:
 	./upgrade-ollama.sh
