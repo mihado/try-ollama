@@ -2,6 +2,7 @@ default: deps
 
 MODELS = \
 	devstral:24b \
+	embeddinggemma:latest \
 	gemma3:12b \
 	gemma3n:e4b \
 	granite3.3:8b \
