@@ -2,7 +2,7 @@
 
 rm -rf tmp/ollama
 mkdir -p tmp/ollama
-curl -fsSL https://ollama.com/download/ollama-linux-amd64.tgz | tar zx -C tmp/ollama
+curl -fL --progress-bar https://ollama.com/download/ollama-linux-amd64.tgz | tar zx -C tmp/ollama
 
 ollama --version
 
