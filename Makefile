@@ -1,6 +1,7 @@
 default: deps
 
 MODELS = \
+	bge-m3:latest \
 	devstral:24b \
 	embeddinggemma:latest \
 	gemma3:12b \
@@ -11,9 +12,10 @@ MODELS = \
 	mxbai-embed-large:latest \
 	nomic-embed-text \
 	phi4 \
-	qwen2.5vl:7b \
+	qwen3-vl:8b \
 	qwen3-coder:30b \
-	qwen3:14b
+	qwen3:14b \
+	qwen3:30b
 
 deps:
 	@for model in $(MODELS); do \
