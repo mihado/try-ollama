@@ -2,20 +2,15 @@ default: deps
 
 MODELS = \
 	bge-m3:latest \
-	devstral:24b \
-	embeddinggemma:latest \
+	deepseek-ocr \
 	gemma3:12b \
-	gemma3n:e4b \
-	granite3.3:8b \
-	magistral:24b \
-	mistral-small3.2:24b \
+	gemma4:26b \
+	gemma4:31b \
+	gemma4:e4b \
+	glm-ocr \
 	mxbai-embed-large:latest \
 	nomic-embed-text \
-	phi4 \
-	qwen3-vl:8b \
-	qwen3-coder:30b \
-	qwen3:14b \
-	qwen3:30b
+	qwen3.5:9b
 
 deps:
 	@for model in $(MODELS); do \
