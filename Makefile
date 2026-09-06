@@ -1,16 +1,14 @@
 default: deps
 
 MODELS = \
-	bge-m3:latest \
-	deepseek-ocr \
-	gemma3:12b \
-	gemma4:26b \
-	gemma4:31b \
 	gemma4:e4b \
-	glm-ocr \
+	medgemma1.5:4b \
+	muse-glimmer:30b \
 	mxbai-embed-large:latest \
 	nomic-embed-text \
-	qwen3.5:9b
+	ornith-1.5:9b \
+	qwen3.5:9b \
+	qwen3-embedding:8b
 
 deps:
 	@for model in $(MODELS); do \
