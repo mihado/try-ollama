@@ -8,7 +8,9 @@ MODELS = \
 	nomic-embed-text \
 	ornith-1.5:9b \
 	qwen3.5:9b \
-	qwen3-embedding:8b
+	qwen3-embedding:4b \
+	qwen3-embedding:8b \
+	dengcao/Qwen3-Reranker-8B:Q5_K_M
 
 deps:
 	@for model in $(MODELS); do \
